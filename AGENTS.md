@@ -46,3 +46,14 @@ If you find a committed `.env`, private key, or live credential: **stop**, repor
 ```bash
 pytest tests/ -v
 ```
+
+# Audit remediation metadata
+audit_path: audit/multi_repo/2026-09-18/repo_contract-risk-review-pipeline_20260918T004839Z.json
+risk_level: MEDIUM
+human_review_required: false
+audit_findings:
+  - "Risk level is MEDIUM, expected LOW."
+  - "Dependency manifests present: requirements.txt"
+  - "HTTP networking libraries in use: requests"
+  - "Test suite present — actively developed project."
+

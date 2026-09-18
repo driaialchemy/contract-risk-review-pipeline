@@ -49,3 +49,10 @@ pytest tests/ -v
 3. **SummaryAgent** â€” Produces a plain-English executive risk brief with clause-by-clause breakdown, top priority actions, and a structured final report.
 
 The **Orchestrator** (`src/orchestrator/engine.py`) routes the shared `AgentState` through each agent in sequence, halts on errors, and exports an `EXECUTION_LOG.md` audit trail.
+
+## Audit Remediation Notes
+
+- Audit path: $AuditFile
+- Risk level from audit: $risk.
+- Addressed audit issues: Risk level is MEDIUM, expected LOW.; Dependency manifests present: requirements.txt; HTTP networking libraries in use: requests; Test suite present — actively developed project.
+
